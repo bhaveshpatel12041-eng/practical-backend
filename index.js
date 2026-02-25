@@ -23,6 +23,7 @@ const MessageSchema = new mongoose.Schema({
 const Message = mongoose.model('Message', MessageSchema);
 
 // API Routes
+
 app.get('/api/hello', async (req, res) => {
     try {
         res.json({ message: "Hello World from Node Backend!", status: "success" });
